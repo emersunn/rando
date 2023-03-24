@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Color Generator</title>
+    <style>
+      #hex {
+        font-size: 96px;
+        text-align: center;
+        margin-top: 15%;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+      }
+      #reload-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="background-color: #000;">
+    <p id="hex"></p>
+    <button id="reload-button">Generate Random Color</button>
+    <script>
+      function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      function setBackgroundColor() {
+        var backgroundColor = getRandomColor();
+        document.body.style.backgroundColor = backgroundColor;
+        document.getElementById("hex").innerHTML = backgroundColor;
+      }
+      setBackgroundColor();
+      document.getElementById("reload-button").addEventListener("click", function() {
+        setBackgroundColor();
+      });
+    </script>
+  </body>
+</html>
