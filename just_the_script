@@ -1,4 +1,3 @@
-    <script>
       function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
@@ -16,4 +15,3 @@
       document.getElementById("reload-button").addEventListener("click", function() {
         setBackgroundColor();
       });
-    </script>
