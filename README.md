@@ -1,4 +1,4 @@
-# rando
+# Rando
 
 This is a JavaScript script that generates a random hexadecimal color code and sets it as the background color of the body element of an HTML document. It also displays the generated color code in a HTML element with the ID "hex".
 
