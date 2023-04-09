@@ -12,3 +12,6 @@ If you want to generate a new color, you can click a button with the ID "reload-
 
 ## Customization
 You can customize this script by modifying the getRandomColor() function to generate colors in a different range or pattern. You can also modify the setBackgroundColor() function to set the background color of a different HTML element or to perform additional actions when the color is changed.
+
+## License
+[License information here](https://github.com/emersunn/cisco-anyconnect-duo/blob/main/LICENSE)
